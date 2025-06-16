@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel d'images</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5O1eKSKv1pWBMIf/O7F3GP0HYh8rziMD4iMKrLfcVrtuCFJClKhqg9BiCMv5Y7lq" crossorigin="anonymous">
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Menu de navigation -->
@@ -33,6 +33,11 @@
 
     <!-- Carousel d'images -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://picsum.photos/id/237/800/400" class="d-block w-100" alt="image1">
@@ -55,7 +60,7 @@
     </div>
 
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-YSW9Y+QA0Bh3Zk8tBFPKON4HrqDBxPukOBFj7tAPl1/Q3Ksnpv0wD6RSU2YXzvvo" crossorigin="anonymous"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
